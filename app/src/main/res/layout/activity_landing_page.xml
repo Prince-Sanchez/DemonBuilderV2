@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LandingPageActivity">
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nosifer"
+        android:text="Username"
+        android:textColor="@color/lightGray"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewAdminStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/syncopate_bold"
+        android:text="Admin: No"
+        android:textColor="@color/lightGray"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnWorkouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAdminStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Workout" />
+
+    <Button
+        android:id="@+id/btnExercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWorkouts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Exercises" />
+
+    <Button
+        android:id="@+id/btnLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnExercises"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="3dp"
+        android:text="Logs" />
+
+    <Button
+        android:id="@+id/btnAdminArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAdminStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Admin Area"
+        android:textColor="@color/black"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="162dp"
+        android:text="Logout" />
+
+
+</RelativeLayout>
